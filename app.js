@@ -9,9 +9,3 @@ async function fetchData(){
     document.getElementById("weight").innerText = json.weight + " Kg.";
     document.getElementById("foto").src = json.sprites.other.home.front_shiny;
     console.log(data.json)
-
-    let est=data.stats;
-        let hp=est[0].base_stat;    let attack=est[1].base_stat;    let defense=est[2].base_stat;    let spattack=est[3].base_stat;    let spdefense=est[4].base_stat;    let speed=est[5].base_stat;
-
-        graphicstats(hp,attack,defense,spattack,spdefense,speed);
-}
