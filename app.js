@@ -9,3 +9,4 @@ async function fetchData(){
     document.getElementById("weight").innerText = json.weight + " Kg.";
     document.getElementById("foto").src = json.sprites.other.home.front_shiny;
     console.log(data.json)
+}
