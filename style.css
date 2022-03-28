@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'VT323', monospace;
+    padding: 0px;
+}
+.header{
+    background-color: #c92a3f;
+
+}
+.header img{
+    margin: 0 auto;
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.pokedex{
+    background-color: #FEE140;
+    background-image: linear-gradient(180deg, #FEE140 0%, #FA709A 100%);
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.buscar{
+    margin: 20px 0px 20px 20px;
+}
+input{
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
+    color: #020202;
+    font-size: 19px;
+    font-weight: bolder;
+}
+.btn{
+    color: #ffffff;
+    background-color: #065ee2;
+    padding: 16px;
+    border: none;
+    margin: 0px;
+    border-radius: 50px;
+
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+.pic{
+    display: flex;
+    flex-flow: column;
+    border-radius: 100%;
+    border: 3px solid #00000080;
+    background-color: #ffffff80;
+    width: 400px;
+    height: 400px;
+    justify-items: center;
+    align-items: center;
+    
+}
+  
+img{ 
+    padding-top: 20px;
+    width: 90%;
+    height: 80%;
+
+}
+
+.pantalla{
+    background: rgb(34,108,195);
+    background: linear-gradient(0deg, rgba(34,108,195,1) 0%, rgba(38,213,207,1) 100%);
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px;
+
+}
+
+.lista-1{
+    padding: 10px;
+    margin: 10px;
+    color: #ffffff;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.lista-2{
+    padding: 10px;
+    margin: 10px;
+    color: #dfdfdf;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+@media (max-width: 768px) {
+    /*==================================
+    HEADER
+    ====================================*/
+    .header img{
+        margin: 0 auto;
+        width: 70%;
+    }
+}

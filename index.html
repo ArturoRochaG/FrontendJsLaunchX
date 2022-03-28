@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title> Pokedex</title>
+
+</head>
+<body>
+    <header class="header">
+        <img src="./img/logo.png" alt="logo">
+    </header>
+    <div class="pokedex">
+        <div class="buscar">
+        <input type="text" id="pokemon" placeholder="Escribe ID o nombre" onkeypress="if(event.keyCode == 13){fetchData()}">
+        <a class="btn" onclick="fetchData()">Go</a>
+        </div>
+        <div class="pic"><img id="foto"></div>
+        <div class="pantalla">                        
+            <div class="lista-1">
+            <ul>
+                <li><h2>N°</h2><br></li>
+                <li><h2>Nombre</h2><br></li>
+                <li><h2>Altura</h2><br></li>
+                <li><h2>Peso</h2><br></li>
+            </ul>
+            </div>
+            <div class="lista-2">
+            <ul>
+                <li><h2 id="number">-</h2><br></li>
+                <li><h2 id="name">-</h2><br></li>
+                <li><h2 id="height">-</h2><br></li>
+                <li><h2 id="weight">-</h2><br></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+
+       
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
